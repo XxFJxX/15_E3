@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_15_E3.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="num.jpg"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Entry x:Name="Nom" Placeholder="Ingrese Nombre del DINOSAURIO"
+                   Keyboard="Default"/>
+
+            <Entry x:Name="kg" Placeholder="Ingrese peso del DINOSAURIO en kg"
+                   Keyboard="Numeric"/>
+
+            <Entry x:Name="mts" Placeholder="Ingrese altura del DINOSAURIO en mts"
+                   Keyboard="Numeric"/>
+
+            <Label x:Name="la"
+                   Text="EL DINOSAURIO"/>
+
+            <Button Text="Listo"
+                    Clicked="Button_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
